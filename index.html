@@ -11,20 +11,27 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Nicolae Caldarasan | JS Coach</title>
+    <title>CN | Web Development</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="nav">
-        <img
-          src="img/logo.jpeg"
+        <a href="#header">
+          <img 
+          src="img/logo.jpeg" 
           alt="Bankist logo"
           class="nav__logo"
           id="logo"
+        <img 
+          src="img/logo.jpeg" 
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+          
         />
         <ul class="nav__links">
           <li class="nav__item">
-            <a class="nav__link" href="#section--1">Features</a>
+            <a class="nav__link" href="#section--1">Web Development</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#section--2">About</a>
@@ -45,14 +52,14 @@
 
       <div class="header__title">
         <h1>
-          When
+          Here
           <!-- Green highlight effect -->
-          <span class="highlight">banking</span>
+          <span class="highlight">Web Development</span>
           meets<br />
-          <span class="highlight">minimalist</span>
+          <span class="highlight">your requirements</span>
         </h1>
-        <h4>A simpler banking experience for a simpler life.</h4>
-        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <h4>From simple to a complex web design.</h4>
+        <!-- <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button> -->
         <img
           src="img/hero.png"
           class="header__img"
@@ -63,9 +70,9 @@
 
     <section class="section" id="section--1">
       <div class="section__title">
-        <h2 class="section__description">Features</h2>
+        <h2 class="section__description">Web Development</h2>
         <h3 class="section__header">
-          Everything you need in a modern bank and more.
+          We have the following 7 steps to build a website.
         </h3>
       </div>
 
@@ -82,11 +89,9 @@
               <use xlink:href="img/icons.svg#icon-monitor"></use>
             </svg>
           </div>
-          <h5 class="features__header">100% digital bank</h5>
+          <h5 class="features__header">Information gathering</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
-            sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
-            debitis ducimus.
+            Before building a website, we gather information related to our project. 
           </p>
         </div>
 
@@ -96,7 +101,7 @@
               <use xlink:href="img/icons.svg#icon-trending-up"></use>
             </svg>
           </div>
-          <h5 class="features__header">Watch your money grow</h5>
+          <h5 class="features__header">Planning and Research</h5>
           <p>
             Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
             inventore ab? Nulla incidunt eius numquam sequi iste pariatur
@@ -122,19 +127,101 @@
               <use xlink:href="img/icons.svg#icon-credit-card"></use>
             </svg>
           </div>
-          <h5 class="features__header">Free debit card included</h5>
+          <h5 class="features__header">Design and Layout</h5>
           <p>
             Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
             eveniet consequatur odit quam quos possimus assumenda dicta fuga
             inventore ab.
           </p>
         </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Content Creation</h5>
+          <p>
+            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+            eveniet consequatur odit quam quos possimus assumenda dicta fuga
+            inventore ab.
+          </p>
+        </div>
+        <img
+        src="img/card-lazy.jpg"
+        data-src="img/card.jpg"
+        alt="Credit card"
+        class="features__img lazy-img"
+      />
+       
+      <img
+          src="img/card-lazy.jpg"
+          data-src="img/card.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Development and Coding</h5>
+          <p>
+            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+            eveniet consequatur odit quam quos possimus assumenda dicta fuga
+            inventore ab.
+          </p>
+        </div>
+
+        
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Testing and Quality Assurance</h5>
+          <p>
+            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+            eveniet consequatur odit quam quos possimus assumenda dicta fuga
+            inventore ab.
+          </p>
+        </div>
+        <img
+        src="img/card-lazy.jpg"
+        data-src="img/card.jpg"
+        alt="Credit card"
+        class="features__img lazy-img"
+      />
+      
+      <img
+          src="img/card-lazy.jpg"
+          data-src="img/card.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Deployment and Maintenance</h5>
+          <p>
+            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+            eveniet consequatur odit quam quos possimus assumenda dicta fuga
+            inventore ab.
+          </p>
+        </div>
+
       </div>
     </section>
 
     <section class="section" id="section--2">
       <div class="section__title">
-        <h2 class="section__description">Operations</h2>
+        <h2 class="section__description">About</h2>
         <h3 class="section__header">
           Everything as simple as possible, but no simpler.
         </h3>
@@ -211,7 +298,7 @@
 
     <section class="section" id="section--3">
       <div class="section__title section__title--testimonials">
-        <h2 class="section__description">Not sure yet?</h2>
+        <h2 class="section__description">Gallery</h2>
         <h3 class="section__header">
           Millions of Bankists are already making their lifes simpler.
         </h3>
