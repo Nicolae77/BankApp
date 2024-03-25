@@ -674,3 +674,46 @@ h4 {
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+
+
+.nav__toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.nav__toggle-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0,0, 0.1);
+    padding: 20px;
+  }
+
+  .nav__links.show {
+    display: block;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 10px;
+  }
+}

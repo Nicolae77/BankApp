@@ -48,6 +48,18 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(header);
 
 
+// Navbar toggle
+const navToggle = document.querySelector('.nav__toggle');
+const navLinks = document.querySelector('.nav__links');
+
+navToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+
+
+
+
 
 
 
