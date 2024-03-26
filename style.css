@@ -676,7 +676,7 @@ h4 {
 }
 
 
-
+/* Navbartoggle */
 .nav__toggle {
   display: none;
   cursor: pointer;
@@ -684,12 +684,26 @@ h4 {
 
 .nav__toggle-line {
   display: block;
-  width: 25px;
+  width: 30px;
   height: 3px;
   background-color: #333;
   margin: 5px 0;
   transition: transform 0.3s ease-in-out;
 }
+
+/* Styles for the close state */
+.nav__toggle.active .nav__toggle-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav__toggle.active .nav__toggle-line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav__toggle.active .nav__toggle-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 
 /* Media query for small screens */
 @media (max-width: 768px) {
