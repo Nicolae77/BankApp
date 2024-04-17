@@ -1,6 +1,8 @@
 /* The page is NOT responsive. You can implement responsiveness yourself if you wanna have some fun 😃 */
 
 :root {
+  --main-fonts-color: #fff;
+	--main-decor-color:#455757;
   --color-primary: #d7f0fe;
   --color-secondary: #ffcb03;
   --color-description: #0c750a;
@@ -730,4 +732,35 @@ h4 {
     display: block;
     padding: 10px;
   }
+}
+
+
+
+/*──────────────────
+    social media
+──────────────────*/
+
+.social-media{
+	padding: 10px;
+	display: flex;
+	position: center;
+  align-items: space-around;
+	justify-content:center;
+}
+
+.social-media a {
+    margin: 10px;
+    font-size: 4rem;
+    text-align:center;
+    display: inline-block;
+	color: var(--main-fonts-color);
+}
+
+.social-media a i{
+	cursor: pointer;
+}
+
+.social-media  a:hover {
+	color: var(--main-decor-color);
+	text-shadow: 0 0 50px var(--main-decor-color);
 }
